@@ -1,28 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
 
-  Improve your front-end skills by building projects
+        <title>Frontend Mentor | QR code component</title>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: hsl(212, 45%, 89%);
+                font-family: "Outfit", serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-main {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 280px;
+                padding: 16px;
+                border-radius: 16px;
+                gap: 16px;
+                margin-bottom: 8px;
+                box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+            }
+
+            img {
+                width: 280px;
+                height: 280px;
+                border-radius: 8px;
+            }
+
+            h1 {
+                font-size: 22px;
+                color: hsl(218, 44%, 22%);
+            }
+
+            p {
+                font-size: 15px;
+                margin-bottom: 16px;
+                color: hsl(216, 15%, 48%);
+            }
+
+            .texts {
+                text-align: center;
+                padding: 0px 8px;
+            }
+
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="card-main">
+                <img src="images/image-qr-code.png" alt="QR Code" />
+
+                <h1 class="texts">
+                    Improve your front-end skills by building projects
+                </h1>
+
+                <p class="texts">
+                    Scan the QR code to visit Frontend Mentor and take your
+                    coding skills to the next level
+                </p>
+            </div>
+
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Lukas Kardeck</a>.
+            </div>
+        </main>
+    </body>
 </html>
